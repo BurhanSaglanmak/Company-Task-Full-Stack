@@ -12,7 +12,7 @@ function AllTransfers() {
   const [drop,setDrop]=useState("Filter")
 
   var currentdate = new Date(); 
-  var datetimeDay = currentdate.getDate() 
+  var datetimeDay = currentdate.getDate() <=9? `0${currentdate.getDate()}`  :currentdate.getDate() 
  var datetimeMonth = (currentdate.getMonth()+1)
  var datetimeYear =currentdate.getFullYear()
 
@@ -77,8 +77,8 @@ useEffect(() => {
         </div>
       </li>
     </ul>))
-    const transferDataFilterDay =  text.filter((items)=>String(items.data.dateDay)===`0${String(datetimeDay)}` )
-    // console.log(transferDataFilterDay);
+    const transferDataFilterDay =  text.filter((items)=>String(items.data.dateDay)===String(datetimeDay) )
+    //  console.log(datetimeDay);
     const transferDataFilterMonth =   transferDataFilterDay.filter((items)=>String(items.data.dateMonth)===String(datetimeMonth))
     const transferDataFilterYear =   transferDataFilterMonth.filter((items)=>String(items.data.dateYear)===String(datetimeYear))
      const transferDataDay =  transferDataFilterYear.map((item, index) =>
