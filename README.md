@@ -1,4 +1,4 @@
-# Company-Task-Full-Stack  [(Live)](https://burhan-saglanmak-turizm-firma-task.netlify.app/)
+# Company-Task-Full-Stack 
 
 - Bir transfer firmasının, kulanıcıları ile arasında bağlantı kurup kayıt olauşturabileceği ve silme/düzeltme işlemlerini yapabileceği uygulama.
 - Bu proje Firebase üzerinden Firestore Database kullanılarak yapılmıştır. (Kullanmak için lütfen Api Key alınız.)
